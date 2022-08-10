@@ -14,6 +14,7 @@ public class Greeting {
         for(int i =0;i<l;i++){
             System.out.println("Good Mornning");
         }
+        in.close();
 
     }
 }
