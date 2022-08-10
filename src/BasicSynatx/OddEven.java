@@ -16,8 +16,8 @@ public class OddEven {
                 case 0 -> System.out.println("The given number is even");
                 default -> System.out.println("the given numbr is odd");
             }
-
         }
+        input.close();
 
     }
 }
