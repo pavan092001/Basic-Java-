@@ -1,5 +1,6 @@
 package BasicSynatx;
 
+
 public class Triplete extends Sc {
     public static void main(String[] args) {
        int num1 = in.nextInt();
