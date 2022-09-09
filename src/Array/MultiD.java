@@ -15,5 +15,7 @@ public class MultiD {
         }
         int[] n = new int[rows];
 
+
+
     }
 }

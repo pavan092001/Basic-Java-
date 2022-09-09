@@ -1,6 +1,8 @@
 package Array;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Letcode8 {
 
@@ -15,15 +17,18 @@ public class Letcode8 {
 //Return the target array.
 //
 //It is guaranteed that the insertion operations will be valid.
-        int[] nums = {0,1,2,3,4};
-        int[] index = {0,1,2,2,1};
+        int[] nums = {1,2,3,4,0};
+        int[] index = {0,1,2,3,0};
         int [] ans = new int[nums.length];
+        ArrayList<Integer> n = new ArrayList<>(nums.length);
 
-        for (int i = 0; i <index.length; i++) {
-            ans[nums[i]] = index[i];
-            ans[index[i]] = nums[i];
+
+        for (int i = 0; i < index.length ; i++) {
+            n.add(index[i],nums[i]);
         }
-        System.out.println(Arrays.toString(ans));
+        System.out.println(n);
+
+
 
     }
 }
